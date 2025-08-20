@@ -4,12 +4,18 @@
 .PHONY: help
 help: ## Display this help message
 	@echo "Available targets:"
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $1, $2}'
 
 # Build targets
 .PHONY: build-cli
 build-cli: ## Build the CLI tool
 	cd cli/usm && go build -o ../../usm .
+
+.PHONY: build-release
+build-release: ## Build release binaries for all platforms
+	GOOS=linux GOARCH=amd64 go build -o usm-linux-amd64 cli/usm/main.go
+	GOOS=darwin GOARCH=amd64 go build -o usm-darwin-amd64 cli/usm/main.go
+	GOOS=windows GOARCH=amd64 go build -o usm-windows-amd64.exe cli/usm/main.go
 
 .PHONY: build-sdks
 build-sdks: ## Build all SDKs
@@ -69,3 +75,4 @@ format: format-go format-node format-python format-php ## Format all code
 clean: ## Clean build artifacts
 	rm -f usm
 	rm -f usm.exe
+	rm -f usm-*

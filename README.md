@@ -44,7 +44,26 @@ usm list
 
 ### CLI
 
-Download the latest binary from [Releases](https://github.com/universal-secrets-manager/usm/releases) or install via Go:
+#### Download Pre-built Binaries (Recommended)
+
+Download the latest binary for your platform from [Releases](https://github.com/universal-secrets-manager/usm/releases):
+
+- **Linux**: `usm-linux-amd64`
+- **macOS**: `usm-darwin-amd64`
+- **Windows**: `usm-windows-amd64.exe`
+
+Make the binary executable and move it to a directory in your PATH:
+
+```bash
+# Linux/macOS
+chmod +x usm-*
+sudo mv usm-* /usr/local/bin/usm
+
+# Windows (in Command Prompt as Administrator)
+move usm-windows-amd64.exe C:\Windows\System32\usm.exe
+```
+
+#### Install via Go
 
 ```bash
 go install github.com/universal-secrets-manager/usm/cli/usm@latest
