@@ -62,7 +62,9 @@ jobs:
       run: |
         cd sdks/python
         pip install pytest
-        SETUPTOOLS_SCM_PRETEND_VERSION=0.1.0 pip install -e .
+        pip install -e .
+      env:
+        SETUPTOOLS_SCM_PRETEND_VERSION: "0.1.0"
 
     - name: Run Go tests
       if: matrix.language == 'go'
