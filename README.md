@@ -13,10 +13,45 @@ A professional, production-grade open-source developer tool that replaces `.env`
 
 ## 🚀 Quick Start
 
-```bash
-# Install the CLI
-go install github.com/universal-secrets-manager/usm/cli/usm@latest
+### Install the CLI
 
+#### Option 1: Download Pre-built Binary (Recommended)
+
+Download the latest binary for your platform from [Releases](https://github.com/universal-secrets-manager/usm/releases):
+
+- **Linux**: `usm-linux-amd64`
+- **macOS**: `usm-darwin-amd64`
+- **Windows**: `usm-windows-amd64.exe`
+
+Make the binary executable and move it to a directory in your PATH:
+
+```bash
+# Linux/macOS
+chmod +x usm-*
+sudo mv usm-* /usr/local/bin/usm
+
+# Windows (in Command Prompt as Administrator)
+move usm-windows-amd64.exe C:\Windows\System32\usm.exe
+```
+
+#### Option 2: Build from Source
+
+```bash
+# Clone the repository
+git clone https://github.com/universal-secrets-manager/usm.git
+cd usm
+
+# Build the CLI tool
+make build-cli
+
+# Move the binary to a directory in your PATH
+sudo mv usm /usr/local/bin/usm  # Linux/macOS
+move usm.exe C:\Windows\System32\usm.exe  # Windows
+```
+
+### Use the CLI
+
+```bash
 # Initialize a new secrets file
 usm init
 
