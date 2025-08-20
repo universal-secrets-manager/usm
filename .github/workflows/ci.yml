@@ -35,7 +35,7 @@ jobs:
       with:
         node-version: '18'
         cache: 'npm'
-        cache-dependency-path: 'sdks/node/package-lock.json'
+        cache-dependency-path: sdks/node/package-lock.json
 
     - name: Set up Python
       if: matrix.language == 'python'
