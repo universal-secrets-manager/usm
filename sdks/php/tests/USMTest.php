@@ -14,6 +14,7 @@ class USMTest
         // $usm = USM::load(__DIR__ . '/fixtures/.secrets.json');
         // assert($usm instanceof USM);
         echo "Test passed (placeholder)\n";
+        return true;
     }
 
     public function testGet()
@@ -24,6 +25,7 @@ class USMTest
         // $value = $usm->get('TEST_KEY');
         // assert($value === 'decrypted_value_for_TEST_KEY');
         echo "Test passed (placeholder)\n";
+        return true;
     }
 }
 
