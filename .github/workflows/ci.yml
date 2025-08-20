@@ -15,6 +15,9 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         language: [go, node, python]
     runs-on: ${{ matrix.os }}
+    # Only Ubuntu runners typically have Docker available by default
+    # Add Docker label only if Docker is actually needed
+    # runs-on: ${{ matrix.os == 'ubuntu-latest' && matrix.language == 'go' && needs_docker == 'true' && format('{0}-docker', matrix.os) || matrix.os }}
 
     steps:
     - name: Checkout code
