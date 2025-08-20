@@ -1,0 +1,9 @@
+go 1.24.5
+
+use (
+	./cli/usm
+	./core/crypto
+	./core/crypto/example
+	./examples/go
+	./sdks/go
+)
