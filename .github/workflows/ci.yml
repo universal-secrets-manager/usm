@@ -43,9 +43,9 @@ jobs:
     - name: Install Go dependencies
       if: matrix.language == 'go'
       run: |
-        (cd cli/usm && go mod tidy)
-        (cd core/crypto && go mod tidy)
-        (cd sdks/go && go mod tidy)
+        cd cli/usm && go mod tidy
+        cd ../.. && cd core/crypto && go mod tidy
+        cd ../.. && cd sdks/go && go mod tidy
 
     - name: Install Node.js dependencies
       if: matrix.language == 'node'
