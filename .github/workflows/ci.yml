@@ -52,6 +52,11 @@ jobs:
       run: |
         cd sdks/node && npm ci
 
+    - name: Build Node.js SDK
+      if: matrix.language == 'node'
+      run: |
+        cd sdks/node && npm run build
+
     - name: Install Python dependencies
       if: matrix.language == 'python'
       run: |
@@ -61,6 +66,11 @@ jobs:
       if: matrix.language == 'go'
       run: |
         make test-cli
+
+    - name: Build Node.js SDK
+      if: matrix.language == 'node'
+      run: |
+        cd sdks/node && npm run build
 
     - name: Run Node.js tests
       if: matrix.language == 'node'
