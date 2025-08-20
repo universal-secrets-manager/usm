@@ -2,6 +2,19 @@
 
 A professional, production-grade open-source developer tool that replaces `.env` files with a secure, standardized, cross-platform secrets manager.
 
+[![CI](https://github.com/universal-secrets-manager/usm/actions/workflows/ci.yml/badge.svg)](https://github.com/universal-secrets-manager/usm/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/universal-secrets-manager/usm)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/universal-secrets-manager/usm)](https://github.com/universal-secrets-manager/usm/releases)
+
+## 🎯 Core Goals
+
+1. Provide a **universal encrypted secrets format** (a `.secrets.yml` file).
+2. Create a **CLI tool (`usm`)** to manage secrets locally and in CI/CD.
+3. Offer **language SDKs** (Node.js, Python, PHP, Go) for easy integration.
+4. Support **team collaboration** (sharing, encryption, versioning).
+5. Allow **optional sync with cloud providers** (AWS, GCP, Vault, etc.).
+6. Be **local-first, offline-capable**, and **cross-platform** (Windows, macOS, Linux).
+
 ## 🎯 Core Goals
 
 1. Provide a **universal encrypted secrets format** (a `.secrets.yml` file).
@@ -132,7 +145,17 @@ go get github.com/universal-secrets-manager/usm/sdks/go
 
 ## 📚 Documentation
 
-See the [official documentation](./docs) for detailed usage, API references, and security information.
+Visit our [official documentation website](https://universal-secrets-manager.github.io/usm/) for comprehensive guides, API references, and tutorials:
+
+- [Quick Start Guide](https://universal-secrets-manager.github.io/usm/docs/quickstart)
+- [Developer Guide](https://universal-secrets-manager.github.io/usm/docs/developer-guide)
+- [Format Specification](https://universal-secrets-manager.github.io/usm/docs/format-spec)
+- [SDK Guides](https://universal-secrets-manager.github.io/usm/docs/sdk-guides)
+- [CI/CD Recipes](https://universal-secrets-manager.github.io/usm/docs/ci-cd-recipes)
+- [Security Model](https://universal-secrets-manager.github.io/usm/docs/security-model)
+- [Enterprise Features](https://universal-secrets-manager.github.io/usm/docs/enterprise-features)
+
+The documentation website is automatically deployed from the `docs` directory whenever changes are pushed to the `main` branch.
 
 ## 🤝 Contributing
 

@@ -1,6 +1,7 @@
 module.exports = {
   docs: [
     'quickstart',
+    'developer-guide',
     'format-spec',
     'security-model',
     'sdk-guides',
