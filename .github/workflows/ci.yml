@@ -55,7 +55,7 @@ jobs:
     - name: Install Python dependencies
       if: matrix.language == 'python'
       run: |
-        cd sdks/python && pip install pytest && pip install -e .
+        cd sdks/python && pip install pytest && SETUPTOOLS_SCM_PRETEND_VERSION=0.1.0 pip install -e .
 
     - name: Run Go tests
       if: matrix.language == 'go'
