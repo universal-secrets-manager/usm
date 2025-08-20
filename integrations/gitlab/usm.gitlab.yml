@@ -1,0 +1,9 @@
+# USM GitLab Template
+
+.gitlab-ci.yml template for USM integration.
+
+usm-export:
+  script:
+    - curl -sSL -o usm-export.sh https://raw.githubusercontent.com/universal-secrets-manager/usm/main/integrations/gitlab/usm-export.sh
+    - chmod +x usm-export.sh
+    - source ./usm-export.sh

@@ -1,0 +1,89 @@
+# GitHub CI Workflow
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        language: [go, node, python, php]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Go
+      if: matrix.language == 'go'
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.21'
+
+    - name: Set up Node.js
+      if: matrix.language == 'node'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: 'sdks/node/package-lock.json'
+
+    - name: Set up Python
+      if: matrix.language == 'python'
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+
+    - name: Set up PHP
+      if: matrix.language == 'php'
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+
+    - name: Install Go dependencies
+      if: matrix.language == 'go'
+      run: |
+        cd cli/usm && go mod tidy
+        cd core/crypto && go mod tidy
+        cd sdks/go && go mod tidy
+
+    - name: Install Node.js dependencies
+      if: matrix.language == 'node'
+      run: |
+        cd sdks/node && npm ci
+
+    - name: Install Python dependencies
+      if: matrix.language == 'python'
+      run: |
+        cd sdks/python && pip install -e .
+
+    - name: Install PHP dependencies
+      if: matrix.language == 'php'
+      run: |
+        cd sdks/php && composer install
+
+    - name: Run Go tests
+      if: matrix.language == 'go'
+      run: |
+        make test-cli
+
+    - name: Run Node.js tests
+      if: matrix.language == 'node'
+      run: |
+        cd sdks/node && npm test
+
+    - name: Run Python tests
+      if: matrix.language == 'python'
+      run: |
+        cd sdks/python && pytest
+
+    - name: Run PHP tests
+      if: matrix.language == 'php'
+      run: |
+        cd sdks/php && ./vendor/bin/phpunit

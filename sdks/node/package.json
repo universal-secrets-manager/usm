@@ -1,0 +1,33 @@
+{
+  "name": "@usm/secrets",
+  "version": "1.0.0",
+  "description": "Node.js SDK for Universal Secrets Manager",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "secrets",
+    "encryption",
+    "security"
+  ],
+  "author": "USM Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.0"
+  },
+  "dependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.0"
+  }
+}

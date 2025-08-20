@@ -1,0 +1,23 @@
+# Codeowners
+
+# Core CLI and crypto
+cli/usm/* nom-nom-hub
+core/crypto/* @nom-nom-hub
+
+# SDKs
+sdks/node/* nom-nom-hub
+sdks/python/* nom-nom-hub
+sdks/php/* nom-nom-hub
+sdks/go/* nom-nom-hub
+
+# CI/CD Integrations
+integrations/github-action/* nom-nom-hub
+integrations/gitlab/* nom-nom-hub
+integrations/jenkins/* nom-nom-hub
+
+# Examples
+examples/* nom-nom-hub
+
+# Documentation
+docs/* nom-nom-hub
+*.md nom-nom-hub

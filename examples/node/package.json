@@ -1,0 +1,12 @@
+{
+  "name": "usm-node-example",
+  "version": "1.0.0",
+  "description": "Example Node.js app using USM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@usm/secrets": "file:../../sdks/node"
+  }
+}

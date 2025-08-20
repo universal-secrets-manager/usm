@@ -1,0 +1,36 @@
+name: 'USM Secrets'
+description: 'Inject USM secrets into your GitHub Actions workflow'
+author: 'USM Contributors'
+inputs:
+  profile:
+    description: 'The profile to use (e.g., dev, staging, prod)'
+    required: false
+    default: 'dev'
+  file:
+    description: 'Path to the secrets file'
+    required: false
+    default: '.secrets.yml'
+  export:
+    description: 'Whether to export secrets as environment variables'
+    required: false
+    default: 'true'
+runs:
+  using: 'composite'
+  steps:
+    - name: Download USM
+      # Implementation to download the USM CLI
+      run: |
+        echo "Downloading USM CLI"
+      shell: bash
+
+    - name: Get secrets
+      # Implementation to run `usm get` and export secrets
+      run: |
+        echo "Getting secrets"
+      shell: bash
+
+    - name: Mask secrets
+      # Implementation to mask secrets in logs
+      run: |
+        echo "Masking secrets"
+      shell: bash
