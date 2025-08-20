@@ -55,7 +55,7 @@ jobs:
     - name: Install Python dependencies
       if: matrix.language == 'python'
       run: |
-        cd sdks/python && pip install -e .
+        cd sdks/python && pip install pytest && pip install -e .
 
     - name: Run Go tests
       if: matrix.language == 'go'
