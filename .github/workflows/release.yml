@@ -44,6 +44,9 @@ jobs:
         # Copy the core/crypto directory
         cp -r ${{ github.workspace }}/core/crypto core
         
+        # Remove the existing go.mod file
+        rm -f cli/usm/go.mod
+        
         # Create a new go.mod file for the CLI that uses a local path instead of replace directive
         echo "module github.com/universal-secrets-manager/usm/cli/usm" > cli/usm/go.mod
         echo "" >> cli/usm/go.mod
