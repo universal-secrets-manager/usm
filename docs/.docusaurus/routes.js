@@ -89,6 +89,11 @@ export default [
     ]
   },
   {
+    path: '/usm/',
+    component: ComponentCreator('/usm/', 'a99'),
+    exact: true
+  },
+  {
     path: '*',
     component: ComponentCreator('*'),
   },
