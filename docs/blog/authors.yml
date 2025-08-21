@@ -1,1 +1,10 @@
-blog post
+# Authors map file for the blog
+
+# Example author:
+# john-doe:
+#   name: John Doe
+#   title: Maintainer of USM
+#   url: https://github.com/nom-nom-hub
+
+# For now, we'll just have an empty object
+{}

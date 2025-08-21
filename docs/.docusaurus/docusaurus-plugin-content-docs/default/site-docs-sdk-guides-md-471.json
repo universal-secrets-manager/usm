@@ -1,0 +1,24 @@
+{
+  "unversionedId": "sdk-guides",
+  "id": "sdk-guides",
+  "title": "SDK Guides",
+  "description": "Node.js",
+  "source": "@site/docs/sdk-guides.md",
+  "sourceDirName": ".",
+  "slug": "/sdk-guides",
+  "permalink": "/usm/docs/sdk-guides",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/sdk-guides.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security Model",
+    "permalink": "/usm/docs/security-model"
+  },
+  "next": {
+    "title": "CI/CD Recipes",
+    "permalink": "/usm/docs/ci-cd-recipes"
+  }
+}

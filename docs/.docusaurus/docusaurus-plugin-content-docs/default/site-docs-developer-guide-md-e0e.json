@@ -1,0 +1,24 @@
+{
+  "unversionedId": "developer-guide",
+  "id": "developer-guide",
+  "title": "Developer Guide",
+  "description": "This guide provides comprehensive information for developers who want to use USM in their projects.",
+  "source": "@site/docs/developer-guide.md",
+  "sourceDirName": ".",
+  "slug": "/developer-guide",
+  "permalink": "/usm/docs/developer-guide",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/developer-guide.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Quickstart",
+    "permalink": "/usm/docs/quickstart"
+  },
+  "next": {
+    "title": "Format Specification",
+    "permalink": "/usm/docs/format-spec"
+  }
+}

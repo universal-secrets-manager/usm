@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ci-cd-recipes",
+  "id": "ci-cd-recipes",
+  "title": "CI/CD Recipes",
+  "description": "GitHub Actions",
+  "source": "@site/docs/ci-cd-recipes.md",
+  "sourceDirName": ".",
+  "slug": "/ci-cd-recipes",
+  "permalink": "/usm/docs/ci-cd-recipes",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/ci-cd-recipes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "SDK Guides",
+    "permalink": "/usm/docs/sdk-guides"
+  },
+  "next": {
+    "title": "Migration from .env",
+    "permalink": "/usm/docs/migration-from-dotenv"
+  }
+}

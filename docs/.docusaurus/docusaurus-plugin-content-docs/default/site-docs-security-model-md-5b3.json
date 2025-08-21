@@ -1,0 +1,24 @@
+{
+  "unversionedId": "security-model",
+  "id": "security-model",
+  "title": "Security Model",
+  "description": "The USM security model is defined in core/spec/Threat-Model.md.",
+  "source": "@site/docs/security-model.md",
+  "sourceDirName": ".",
+  "slug": "/security-model",
+  "permalink": "/usm/docs/security-model",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/security-model.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Format Specification",
+    "permalink": "/usm/docs/format-spec"
+  },
+  "next": {
+    "title": "SDK Guides",
+    "permalink": "/usm/docs/sdk-guides"
+  }
+}

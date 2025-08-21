@@ -1,0 +1,72 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/usm/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/usm/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "ci-cd-recipes",
+              "path": "/usm/docs/ci-cd-recipes",
+              "sidebar": "docs"
+            },
+            {
+              "id": "developer-guide",
+              "path": "/usm/docs/developer-guide",
+              "sidebar": "docs"
+            },
+            {
+              "id": "enterprise-features",
+              "path": "/usm/docs/enterprise-features",
+              "sidebar": "docs"
+            },
+            {
+              "id": "format-spec",
+              "path": "/usm/docs/format-spec",
+              "sidebar": "docs"
+            },
+            {
+              "id": "index",
+              "path": "/usm/docs/"
+            },
+            {
+              "id": "migration-from-dotenv",
+              "path": "/usm/docs/migration-from-dotenv",
+              "sidebar": "docs"
+            },
+            {
+              "id": "quickstart",
+              "path": "/usm/docs/quickstart",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk-guides",
+              "path": "/usm/docs/sdk-guides",
+              "sidebar": "docs"
+            },
+            {
+              "id": "security-model",
+              "path": "/usm/docs/security-model",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/usm/docs/quickstart",
+                "label": "quickstart"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

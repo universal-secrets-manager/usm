@@ -1,0 +1,24 @@
+{
+  "unversionedId": "migration-from-dotenv",
+  "id": "migration-from-dotenv",
+  "title": "Migration from .env",
+  "description": "USM can import secrets from .env files:",
+  "source": "@site/docs/migration-from-dotenv.md",
+  "sourceDirName": ".",
+  "slug": "/migration-from-dotenv",
+  "permalink": "/usm/docs/migration-from-dotenv",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/migration-from-dotenv.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "CI/CD Recipes",
+    "permalink": "/usm/docs/ci-cd-recipes"
+  },
+  "next": {
+    "title": "Enterprise Features (Preview)",
+    "permalink": "/usm/docs/enterprise-features"
+  }
+}

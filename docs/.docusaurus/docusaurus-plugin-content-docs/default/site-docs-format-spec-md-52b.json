@@ -1,0 +1,24 @@
+{
+  "unversionedId": "format-spec",
+  "id": "format-spec",
+  "title": "Format Specification",
+  "description": "The USM format specification is defined in core/spec/USM-Format-v1.md.",
+  "source": "@site/docs/format-spec.md",
+  "sourceDirName": ".",
+  "slug": "/format-spec",
+  "permalink": "/usm/docs/format-spec",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/format-spec.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Developer Guide",
+    "permalink": "/usm/docs/developer-guide"
+  },
+  "next": {
+    "title": "Security Model",
+    "permalink": "/usm/docs/security-model"
+  }
+}

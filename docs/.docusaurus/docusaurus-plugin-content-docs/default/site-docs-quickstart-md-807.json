@@ -1,0 +1,20 @@
+{
+  "unversionedId": "quickstart",
+  "id": "quickstart",
+  "title": "Quickstart",
+  "description": "Get started with USM in a few simple steps.",
+  "source": "@site/docs/quickstart.md",
+  "sourceDirName": ".",
+  "slug": "/quickstart",
+  "permalink": "/usm/docs/quickstart",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "next": {
+    "title": "Developer Guide",
+    "permalink": "/usm/docs/developer-guide"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "unversionedId": "enterprise-features",
+  "id": "enterprise-features",
+  "title": "Enterprise Features (Preview)",
+  "description": "Enterprise features are coming soon, including:",
+  "source": "@site/docs/enterprise-features.md",
+  "sourceDirName": ".",
+  "slug": "/enterprise-features",
+  "permalink": "/usm/docs/enterprise-features",
+  "draft": false,
+  "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/enterprise-features.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Migration from .env",
+    "permalink": "/usm/docs/migration-from-dotenv"
+  }
+}
