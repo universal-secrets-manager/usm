@@ -1,5 +1,4 @@
 {
-  "unversionedId": "migration-from-dotenv",
   "id": "migration-from-dotenv",
   "title": "Migration from .env",
   "description": "USM can import secrets from .env files:",
@@ -8,6 +7,7 @@
   "slug": "/migration-from-dotenv",
   "permalink": "/usm/docs/migration-from-dotenv",
   "draft": false,
+  "unlisted": false,
   "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/migration-from-dotenv.md",
   "tags": [],
   "version": "current",

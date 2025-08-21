@@ -1,5 +1,4 @@
 {
-  "unversionedId": "ci-cd-recipes",
   "id": "ci-cd-recipes",
   "title": "CI/CD Recipes",
   "description": "GitHub Actions",
@@ -8,6 +7,7 @@
   "slug": "/ci-cd-recipes",
   "permalink": "/usm/docs/ci-cd-recipes",
   "draft": false,
+  "unlisted": false,
   "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/ci-cd-recipes.md",
   "tags": [],
   "version": "current",

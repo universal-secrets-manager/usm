@@ -1,5 +1,4 @@
 {
-  "unversionedId": "format-spec",
   "id": "format-spec",
   "title": "Format Specification",
   "description": "The USM format specification is defined in core/spec/USM-Format-v1.md.",
@@ -8,6 +7,7 @@
   "slug": "/format-spec",
   "permalink": "/usm/docs/format-spec",
   "draft": false,
+  "unlisted": false,
   "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/format-spec.md",
   "tags": [],
   "version": "current",

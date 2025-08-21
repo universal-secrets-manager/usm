@@ -3,7 +3,9 @@
   "items": [
     {
       "title": "welcome",
-      "permalink": "/usm/blog/2025/08/20/welcome"
+      "permalink": "/usm/blog/2025/08/20/welcome",
+      "unlisted": false,
+      "date": "2025-08-20T00:00:00.000Z"
     }
   ]
 }

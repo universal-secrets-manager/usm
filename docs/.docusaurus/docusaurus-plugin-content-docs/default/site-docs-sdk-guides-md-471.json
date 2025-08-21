@@ -1,5 +1,4 @@
 {
-  "unversionedId": "sdk-guides",
   "id": "sdk-guides",
   "title": "SDK Guides",
   "description": "Node.js",
@@ -8,6 +7,7 @@
   "slug": "/sdk-guides",
   "permalink": "/usm/docs/sdk-guides",
   "draft": false,
+  "unlisted": false,
   "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/sdk-guides.md",
   "tags": [],
   "version": "current",

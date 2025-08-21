@@ -5,10 +5,10 @@
   "title": "welcome",
   "description": "blog post",
   "date": "2025-08-20T00:00:00.000Z",
-  "formattedDate": "August 20, 2025",
   "tags": [],
   "readingTime": 0.01,
   "hasTruncateMarker": false,
   "authors": [],
-  "frontMatter": {}
+  "frontMatter": {},
+  "unlisted": false
 }

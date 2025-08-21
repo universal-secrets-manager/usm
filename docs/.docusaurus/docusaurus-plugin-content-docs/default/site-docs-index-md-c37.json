@@ -1,5 +1,4 @@
 {
-  "unversionedId": "index",
   "id": "index",
   "title": "Welcome",
   "description": "Universal Secrets Manager (USM) is a professional, production-grade open-source developer tool that replaces .env files with a secure, standardized, cross-platform secrets manager.",
@@ -8,6 +7,7 @@
   "slug": "/",
   "permalink": "/usm/docs/",
   "draft": false,
+  "unlisted": false,
   "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/index.md",
   "tags": [],
   "version": "current",

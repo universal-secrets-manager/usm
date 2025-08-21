@@ -1,5 +1,4 @@
 {
-  "unversionedId": "enterprise-features",
   "id": "enterprise-features",
   "title": "Enterprise Features (Preview)",
   "description": "Enterprise features are coming soon, including:",
@@ -8,6 +7,7 @@
   "slug": "/enterprise-features",
   "permalink": "/usm/docs/enterprise-features",
   "draft": false,
+  "unlisted": false,
   "editUrl": "https://github.com/universal-secrets-manager/usm/edit/main/docs/docs/enterprise-features.md",
   "tags": [],
   "version": "current",
