@@ -38,14 +38,15 @@ jobs:
         mkdir -p /tmp/usm-release
         cd /tmp/usm-release
         
-        # Copy the CLI directory
-        cp -r ${{ github.workspace }}/cli/usm cli
+        # Create the directory structure
+        mkdir -p cli/usm
+        mkdir -p core
+        
+        # Copy the CLI source files
+        cp -r ${{ github.workspace }}/cli/usm/* cli/usm/
         
         # Copy the core/crypto directory
-        cp -r ${{ github.workspace }}/core/crypto core
-        
-        # Ensure the CLI directory structure exists
-        mkdir -p cli/usm
+        cp -r ${{ github.workspace }}/core/crypto core/
         
         # Remove the existing go.mod file if it exists
         rm -f cli/usm/go.mod
